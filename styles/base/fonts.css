@@ -1,0 +1,131 @@
+/*------Google Fonts-------*/
+/*@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700');*/
+/*-------------------------*/
+
+/*------Font Awesome-------*/
+/* @font-face {
+  src: url('../../fonts/')
+} */
+
+
+/*-------------------------*/
+
+/*-------- Sawarabi Mincho - JP Google fonts ---------*/
+
+/* Sawarabi Mincho (Japanese) https://fonts.google.com/earlyaccess */
+@font-face {
+  font-family: 'Sawarabi Mincho';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/SawarabiMincho-Regular.eot');
+  src: url('../fonts/SawarabiMincho-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SawarabiMincho-Regular.woff2') format('woff2'),
+       url('../fonts/SawarabiMincho-Regular.woff') format('woff'),
+       url('../fonts/SawarabiMincho-Regular.ttf') format('truetype');
+}
+
+/* Sawarabi Gothic (Japanese) https://fonts.google.com/earlyaccess */
+@font-face {
+  font-family: 'Sawarabi Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/SawarabiGothic-Regular.eot');
+  src: url('../fonts/SawarabiGothic-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SawarabiGothic-Regular.woff2') format('woff2'),
+       url('../fonts/SawarabiGothic-Regular.woff') format('woff'),
+       url('../fonts/SawarabiGothic-Regular.ttf') format('truetype');
+}
+/*----------------------------*/
+
+
+/*--------- Noto Serif --------*/
+/* noto-serif-regular - latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-serif-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: /*local('Noto Serif'), local('NotoSerif'),*/
+       url('../fonts/noto-serif-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-serif-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-serif-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-serif-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-serif-v6-latin-regular.svg#NotoSerif') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: light;
+  font-weight: 300;
+  src: url('../fonts/NotoSerif-Light.eot'); /* IE9 Compat Modes */
+  src: /*local('Noto Serif'), local('NotoSerif'),*/
+       url('../fonts/NotoSerif-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NotoSerif-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/NotoSerif-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/NotoSerif-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NotoSerif-Light.svg#NotoSerif') format('svg'); /* Legacy iOS */
+}
+
+
+/*----------------------------*/
+/*--------- Noto Sans --------*/
+/* noto-sans-regular - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans'), local('NotoSans'),
+       url('../fonts/noto-sans-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-v7-latin-regular.svg#NotoSans') format('svg'); /* Legacy iOS */
+}
+
+
+/*----------------------------*/
+/*-------- Noto Serif Display ---------*/
+/* noto-serif-display-regular - latin */
+@font-face {
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/NotoSerifDisplay-Regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Display'), local('NotoSansDisplay'),
+       url('../fonts/NotoSerifDisplay-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NotoSerifDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/NotoSerifDisplay-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/NotoSerifDisplay-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NotoSerifDisplay-Regular.svg#NotoSansDisp') format('svg'); /* Legacy iOS */
+}
+
+/* noto-serif-display-bold - latin */
+@font-face {
+  font-family: 'Noto Serif Display';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../fonts/NotoSerifDisplay-Bold.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Display'), local('NotoSansDisplay'),
+       url('../fonts/NotoSerifDisplay-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NotoSerifDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/NotoSerifDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/NotoSerifDisplay-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NotoSerifDisplay-Bold.svg#NotoSansDisp') format('svg'); /* Legacy iOS */
+}
+
+
+// /*moderne Browser*/
+// @font-face {
+//   font-family: Fontname; /* regular font */
+//   src: url("Fontname-Regular.woff") format("woff");
+//   font-weight: normal; font-style: normal; }
+
+
+//   für Android zusätzlich TTF/OTF einbinden
+//   @font-face {
+//   font-family: Fontname; /* regular font */
+//   src: url("path/Fontname-Regular.ttf") format("ttf"),
+//        url("path/Fontname-Regular.woff") format("woff");
+//   font-weight: normal;
+//   font-style:  normal; }

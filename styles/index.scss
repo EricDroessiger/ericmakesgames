@@ -1,0 +1,234 @@
+/* Base files. */
+@import "base/normalize"; /* nicht anfassen */
+
+@import "base/variables"; /* hier Code anpassen */
+@import "base/functions"; /* nicht anfassen */
+@import "base/base-styles"; /* hier Code anpassen */
+@import "base/utils";
+@import "base/typography"; /* hier Code anpassen */
+@import "base/fonts"; /*schriften Laden*/
+
+
+/* Modules files. */
+
+@import "modules/buttons";
+//@import "modules/forms";
+//@import "modules/code";
+@import "modules/grid"; /* hier Code einfügen */
+@import "modules/lists"; /* hier Code anpassen */
+
+@import "modules/tables";
+@import "modules/spacing"; /* hier Code anpassen */
+@import "modules/media-queries"; /* hier Code für Responsive Design einfügen. */
+
+/*-------AUFGABE---------*/
+// schon fertigen Code in die Bereiche Base & Modules richtig einbauen.
+
+
+/*__________layout-grid__________*/
+
+.grid-container {
+	max-width: 1136px;
+	margin:0 auto;
+	display:grid;
+	//background-color: #F2994A;
+
+	&-flex{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		//background-color: #657ED3;
+		//border: 2px solid #000;
+	}
+
+	&-small{
+		height: 396px;
+		width: 560px;
+		margin: 0px;
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
+
+
+////////// CODE-ERIC
+.grid-item-flex-large{
+height: 320px;
+max-width: 1136px;
+min-width: 328px;
+margin: 4px;
+flex-grow: 1;
+background-color: #4D4D4D;
+//background-image: url(assets/img-design01-unsplash.jpg);
+}
+
+.grid-item-flex-middle{
+height: 320px;
+min-width: 328px;
+max-width: 560px;
+margin: 4px;
+flex-wrap: wrap;
+flex-direction: row;
+background-color: #4D4D4D;
+}
+
+.grid-item-flex-small{
+height: 192px;
+width: 272px;
+//margin: 8px;
+flex-wrap: wrap;
+flex-direction: row;
+//background-color: #4D4D4D;
+
+//justify-content: flex-start;
+//grid-row-end: 2;
+ }
+
+
+/*__________Accordion Menu__________*/
+/*
+.ac-container{
+	min-width: 328px;
+	margin: 16px 16px 16px 16px;
+  	padding: 0 16px 0 16px;
+	text-align: left;
+}
+.ac-container label{
+	//font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	padding: 5px 20px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	//color: #777;
+	//text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	line-height: 33px;
+	font-size: 19px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+	box-shadow:
+		0px 0px 0px 1px rgba(155,155,155,0.3),
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset,
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+.ac-container label:hover{
+	background: #fff;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: #c6e1ec;
+	color: #3d7489;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+	box-shadow:
+		0px 0px 0px 1px rgba(155,155,155,0.3),
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 7px;
+	background: transparent url(../images/arrow_down.png) no-repeat center center;
+}
+.ac-container input:checked + label:hover:after{
+	background-image: url(../images/arrow_up.png);
+}
+.ac-container input{
+	display: none;
+}
+.ac-container article{
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p{
+	font-style: italic;
+	color: #777;
+	line-height: 23px;
+	font-size: 14px;
+	padding: 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.ac-container input:checked ~ article{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.ac-container input:checked ~ article.ac-small{
+	height: 160px;
+}
+.ac-container input:checked ~ article.ac-medium{
+	height: 184px;
+}
+.ac-container input:checked ~ article.ac-large{
+	height: 240px;
+}
+
+*/
+
+///// CODE - JENS
+// .grid-item-flex {
+//   margin: 8px;
+//   background-color: #4D4D4D;
+//   max-width: 1136px;
+//   min-width: 560px;
+
+//   &-large {
+//     background-color: #4D4D4D;
+//     margin: 8px;
+//     flex-grow: 1;
+//     height: 396px;
+//     min-width: 560px;
+//   }
+
+//   &-middle {
+//     height: 396px;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//   }
+
+//   &-small{
+//     flex-wrap: wrap;
+//     height: 192px;
+//     width: 272px;
+//   }
+// }
+
+//Container for middle and small items after big item
+// .grid-container-flex{
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   background-color: #657ED3;
+//   border: 2px solid #000;
+// }
+
+//Container for Small items next to middle sized items
+// .grid-item-flex-small-container{
+//   display: grid;
+//   grid-template-columns: auto auto;
+//   margin: 0px;
+//   height: 396px;
+//   width: 560px;
+// }

@@ -1,0 +1,623 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// NOTE
+// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// are based on 10px sizing. So basically 1.5rem = 15px :)
+
+html {
+  font-size: 52.5%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size; // currently ems cause chrome bug misinterpreting rems on body element
+  font-weight: 400;
+  line-height: $line-height; /*is like 30px*/
+
+  // color: $font-color;
+  color:$color-fontDark;
+  background-color: $color-bg;
+
+  //padding: 16px;
+  max-width: 1440px;
+  margin: 0 auto; //Align Website to middle
+}
+
+
+/*__________Project Images__________*/
+img{
+  wborder-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*__________sections__________*/
+
+//#sectionWelcome{}
+
+#sectionWelcome img{
+  display: block;
+  //display: relative;
+  width:90%;
+  max-width: 560px;
+  min-width: 240px;
+  margin: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#sectionWelcome .icons
+{
+  margin:50px 10px 10px 10px;
+  & a{
+    margin: 0 20px;
+  }
+}
+
+#sectionWelcome .logo{}
+
+.welcomeText h2{
+  font-size:1.625em;
+  font-style: 300;
+  font-weight: 320;
+}
+
+.welcomeText p{
+  font-size:1.125em;
+  font-style: normal;
+}
+
+.welcomeText .italic{
+  font-style: italic;
+}
+
+
+
+/*
+#sectionDark,
+#sectionMyWork
+{
+  background-color: $color-fontDark;
+  color:$color-fontLight;
+}
+*/
+
+/*__________Index__________*/
+
+#sectionMyWork img
+{
+  max-width: 100%;
+  //display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+}
+
+#sectionMyWork h1
+{
+  text-align: center;
+  //transform: skew(0deg, -10deg) translateY(-60px);
+  padding: 100px 0px 32px 0;
+  //margin-bottom:0px;
+  //color:$color-fontDark;
+  font-style: bold;
+  line-height: 1.3;
+  letter-spacing: .2rem;
+  //text-decoration: underline;
+
+}
+
+.skewedBox
+{
+
+  transform: skew(0deg, -10deg);
+  border-radius: 4px;
+  margin-top: 2em;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+
+  background-color: $color-fontDark;
+  color:$color-fontLight;
+
+  &--light
+  {
+    background-color: $color-fontLight;
+    color:$color-fontDark;
+  }
+
+
+}
+/*
+.skewedBoxOther
+{
+  transform: skew(0deg, -10deg);
+  border-radius: 4px;
+  margin-top: 2em;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+
+  background-color: $color-fontLight;
+  color:$color-fontDark;
+
+}
+*/
+
+.skewedBox .container
+{
+  transform: skew(0deg, +10deg);
+  padding-top: 2em;
+  padding-bottom: 2vw;
+}
+
+#sectionSkills, #sectionAbout
+{
+  padding-top: 3em;
+  padding-bottom:2vw;
+  h1{
+    margin-bottom: 3%;
+    margin-left: -3px;
+    //text-decoration: underline;
+  }
+  .list{
+    margin-left: -20px;
+  }
+}
+
+
+#sectionBarNav a{
+  width: 100%;
+  min-height: 40px;
+  padding: 20px;
+  margin: 20px;
+  background-color: $color-fontDark;
+  color:$color-fontLight;
+}
+
+/*_________________All Project Headers ___________________*/
+
+#projectHeader{ /* allgemein für alle intro header*/
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-attachment:fixed;
+  background-attachment: scroll; /* for iphone*/
+  color:$color-fontLight;
+
+
+  & a.button
+  {
+  position:absolute;
+  margin-top:40px;
+  }
+
+  & h1
+  {
+    font-size: 3.5em;
+    padding:120px 0 0px 0;
+    //margin: 40px 0 40px 0;
+    text-align: center;
+  }
+}
+
+
+/*__________Individual Projects__________*/
+
+section
+{
+  & img
+  {
+  margin:8px 0 24px 0;
+  .column, .columns
+  {
+    margin-left: 0%;
+  }
+  max-width: 100%;
+  }
+}
+
+#startpage, #project-railrecon, #project-bioside, #project-alone, #project-musclemagic, #project-others
+{
+
+  & #backgroundInfos{
+    //padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #sectionAbout{
+    //padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #production{
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #conclusion{
+    //padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #contact{
+    padding-bottom: 8vw;
+  }
+}
+
+/*____________________________________*/
+
+#project-railrecon>#projectHeader{
+  background-image: url("../assets/portfolio/rail-recon/web/rr-large-screenshot4_1280x.png");
+  background-position: center center;
+  padding-bottom:80px;
+}
+
+body#project-railrecon .skewedBox{
+  margin-top: -18vh;
+}
+
+/*____________________________________*/
+
+#project-bioside>#projectHeader{
+  background-image: url("../assets/portfolio/bioside/web/bioside_scene2_1280x.png");
+  background-position: center 50%;
+  padding-bottom:80px;
+
+}
+
+body#project-bioside .skewedBox{
+  margin-top: -24vh;
+  //padding-top: 0px;
+  //padding-top:-200px;
+}
+
+/*____________________________________*/
+
+#project-alone>#projectHeader{
+  background-image: url("../assets/portfolio/alone/web/conceptart_01_1280x.png");
+  background-position: center 50%;
+  padding-bottom:80px;
+}
+
+body#project-alone .skewedBox{
+  margin-top: -24vh;
+  //padding-top: 0px;
+  //padding-top:-200px;
+}
+
+/*____________________________________*/
+
+
+#project-musclemagic>#projectHeader{
+  background-image: url("../assets/portfolio/musclemagic/web/mm-large-screenshot1_1920x.png");
+  background-position: top;
+  padding-bottom:80px;
+}
+
+body#project-musclemagic .skewedBox{
+  margin-top: -24vh;
+  //padding-top: 0px;
+  //padding-top:-200px;
+}
+
+
+
+
+/*____________________*/
+/*space for other project pages background-img*/
+/*____________________*/
+
+.videoContainer {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	//padding-top: 25px;
+	height: 0;
+}
+
+.videoContainer iframe{
+  position: absolute;
+	top: -24px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*__________Project-Cards__________*/
+
+#sectionMyWork
+{
+  & ul
+  {
+  margin-bottom: 0rem; /*reset*/
+  }
+
+  & li
+  {
+  margin-bottom: 0rem; /*reset*/
+  }
+}
+
+.ProjectCard
+{
+  position:relative;
+  width: 100%;
+  color: $color-fontLight;
+  text-align: center;
+
+  &__top{
+    //background-image:url("../assets/Project_full_320.png"); /*bild nicht zu sehen.*/
+    //max-width: 100%;
+    //height: auto;
+  }
+
+  &__two{}
+  &__three{}
+  &__four{}
+  &__five{}
+  &__six{}
+  &__seven{
+  }
+}
+
+.ProjectCard
+{
+  & img
+  {
+    opacity: 1;
+    //filter: blur(0.0px);
+    /*filter: blur(0px); // 1.5 */
+  }
+
+  & .icons{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 11;
+    margin-top:-100px;
+  }
+}
+
+.card-intro
+{
+  position: absolute;
+  z-index: 10; /*text over img*/
+  margin-top:6vw; /*8vw ideal für mobil - in the version @media Desktop ändern in 3vw*/
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-shadow: 0px 1px 4px $color-text-shadow;
+  padding:5px 0;
+  color: $color-fontLight;
+  /*(transform: skew(0deg, -10deg);*/
+  /*background-color:rgba(255,255,255,0.1);*/
+  & span
+  {
+    line-height: 2em;
+  }
+}
+
+.card-intro h3
+{
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+.ProjectCard:hover img
+{
+  opacity: 1;
+  /*filter: blur(0.5px);*/
+  transition: all .4s ease-in-out;
+}
+
+.underline-anim-1
+{
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 4px; /*breite*/
+  transition: color ease 0.3s;
+
+  &::after
+  {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: $underlineHeight;
+    left: 0;
+    bottom: 0;
+    background-color: $underlineColor;
+    transition: all ease 0.4s;
+  }
+}
+
+/*-- hover --*/
+
+.ProjectCard:hover h3
+{
+  color: $color-fontLight;
+  pointer-events: none;
+}
+
+.ProjectCard:hover .card-intro
+{
+  color: $color-fontLight;
+  pointer-events: none;
+}
+
+.ProjectCard:hover .underline-anim-1
+{
+  color: white;
+
+  &::after {
+    height: 100%;
+  }
+}
+
+/*css code for underline bg example*/
+/*
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 88%;
+  }
+}
+*/
+
+// For devices larger than 400px
+/* @media (#{$bp-larger-than-mobile}) {
+  .container {
+    width: $container-width-larger-than-mobile;
+    padding: 0;
+  }
+}
+*/
+
+
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+  color: $link-color;
+  &:hover {
+    color: darken($link-color, 5%);
+  }
+}
+
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid $light-grey;
+}
+// Lists
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.list
+{
+  padding-left: 20px;
+
+  li
+  {
+  list-style: disc outside; /*circle inside*/
+  }
+
+}
+
+// Icons - Logos
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.logo{
+  width: 8em;
+  margin: auto;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  //margin: 1em;
+  //align-items: baseline;
+}
+
+.icons object{
+  width: 32px;
+  //height: 32px;
+  //width: 2em;
+  //padding: 1em 2em 2em 1em;
+  margin: 1em;
+}
+
+// Footer
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+footer
+{
+   padding: 0 0 80px 0;
+   background-color: #4D4D4D;
+
+}
+
+.footerNav{
+  height: 90px;
+  font-weight: 700;
+  //font-size: 1.1em;
+  line-height: 1.5;
+
+  li
+  {
+    //background-color: $color-secondary;
+    margin-bottom: 0rem;
+    background-color: $color-secondary;
+
+  }
+
+  li:hover a
+  {
+    background-color: $color-orange;
+  }
+
+  li:active a
+  {
+    background-color: $color-orange;
+  }
+
+  //background-color: #333333;
+    .navItem{
+      max-width: 100%;
+      min-width: 32%;
+      text-align: left;
+      padding:20px 0 20px 20px;
+      width:94%;
+    }
+
+    a
+    {
+
+      transition: all 0.2s ease;
+      //padding: .5rem .75rem;
+      letter-spacing: .1em;
+      color: $color-fontLight;
+      text-decoration: none;
+      display: inline-block;
+      background-color: $color-secondary;
+      touch-action: manipulation;
+
+      cursor: pointer;
+      vertical-align: button;
+      height: auto;
+
+      /*transition: transform .15s, background-color .15s, color .15s, -webkit-transform .15s;
+      border-radius: 5px;*/
+      /*later for hover animation*/
+    }
+}
+
+
+
+.flex-grid {
+  display: block;
+}
+.flex-grid .col {
+  flex: 1;
+}
+.flex-grid-thirds {
+  display: block;
+  justify-content: center;
+}
+.flex-grid-thirds .col {
+  width: 100%;
+}

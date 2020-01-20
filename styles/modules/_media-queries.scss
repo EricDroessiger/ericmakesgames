@@ -1,0 +1,186 @@
+// Media Queries
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Note: The best way to structure the use of media queries is to create the queries
+// near the relevant code. For example, if you wanted to change the styles for buttons
+// on small devices, paste the mobile query code up in the buttons section and style it
+// there.
+
+// Larger than mobile
+@media (#{$bp-larger-than-mobile}) {
+	/*.ProjectCard:hover .card-intro{
+  		margin-top:12vw;
+	}*/
+
+	html
+	{
+  	font-size: 62.5%;
+	}
+
+	
+}
+
+// Larger than phablet (also point when grid becomes active)
+@media (#{$bp-larger-than-phablet})
+{
+	body
+	{
+	font-size: 18px;
+	line-height: 1.7em;
+	}
+
+	#sectionWelcome
+	{
+		& .hero-img
+		{
+		margin-top:60px;
+		border-radius: 6px;
+		}
+		& .icons
+		{
+			margin:30px 10px 10px 10px;
+			& a{
+			  margin: 0 20px;
+			}
+		}
+	}
+
+	.card-intro
+	{
+	margin-top:2vw;
+
+		& h3
+		{
+		font-size: 2.2rem;
+		}
+
+		& span
+		{
+		line-height: 2em;
+		}
+	}
+
+	.ProjectCard
+	{
+		& .icons{
+			margin-top:-110px;
+		  }
+	}
+
+	/*.ProjectCard .underline-anim-1{
+		&::after {
+    		height: 100%;
+  		}
+	}*/
+
+	.flex-grid,
+  	.flex-grid-thirds
+  	{
+   	display: flex;
+
+    	.col
+    	{
+      	width: 32%;
+      	margin: 0 0 10px 0;
+    	}
+
+    	.navItem
+    	{
+    	text-align: center;
+    	}
+  	}
+}
+
+// Larger than tablet
+@media (#{$bp-larger-than-tablet}){
+
+	body#project-railrecon .skewedBox
+	{
+  	margin-top: -14vw;
+	}
+
+	#sectionWelcome {
+	
+		& .hero-img
+		{
+		margin-top:30px;
+		border-radius: 6px;
+		}
+
+		& .icons
+		{
+			margin:30px 10px 10px 10px;
+			& a{
+			  margin: 0 20px;
+			}
+		}
+		
+		& .card-intro
+		{
+		margin-top:2vw;
+			& h3
+			{
+			font-size: 3.2rem;
+			}
+		}
+	}
+
+  	#projectHeader
+  	{
+  	background-attachment:fixed;
+    margin-bottom: 4vw;
+	}
+	
+	.ProjectCard
+	{
+		& .icons{
+			margin-top:-120px;
+		  }
+	}
+
+}
+
+// Larger than desktop
+@media (#{$bp-larger-than-desktop})
+{
+	#sectionWelcome
+	{
+		& .hero-img
+		{
+		margin-bottom: 65px;
+		margin-top:-36px;
+		border-radius: 0 0 6px 6px;
+		}
+
+		& .icons
+		{
+			margin:10px 10px 10px 10px;
+			padding-bottom: 20px;
+			& a{
+			  margin: 0 30px;
+			}
+		}
+  	
+	}
+
+	.card-intro
+	{
+	margin-top:6vw;
+		& h3
+		{
+		font-size: 3.6rem;
+		}
+	}
+
+	#projectHeader
+  	{
+  	background-attachment:fixed;
+    margin-bottom: 4vw;
+  	}
+}
+
+// Larger than Desktop HD
+@media (#{$bp-larger-than-desktophd}) {}
+
+// Code der sich verändern soll hier einfügen. Vererbung geht von klein nach Groß.
+// Verlinkt zu den variablen.sass

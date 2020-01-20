@@ -1,0 +1,60 @@
+// Spacing
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem;
+}
+
+#sectionWelcome{
+  padding: 2vw 0;
+}
+
+#sectionWelcome .welcomeText{
+  padding: 0 16px;
+}
+
+#sectionWelcome .logo{
+  padding-top:4vw;
+  margin-bottom:2vw;
+}
+
+#sectionDark{
+  padding-top: 2em;
+  padding-bottom: 2vw;
+}
+
+#sectionMyWork{
+  padding-top: 2em;
+  padding-bottom: 2vw;
+}
+
+.skewedBox{
+  //padding-top: 2em;
+  padding-bottom: 4vw;
+  margin-bottom: 4vw;
+}
+
+.descriptionAlone{
+  padding-top: 4vw;
+  padding-bottom: 2vw;
+}

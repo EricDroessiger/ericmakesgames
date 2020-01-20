@@ -1,0 +1,46 @@
+// Tables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+table#ProjectDetails{
+  color:$color-fontLight;
+  //min-width: 324px;
+
+  &--light{
+    color:$color-fontDark;
+  }
+}
+
+table#ProjectDetails th, td{
+  padding: 4px 0px;
+}
+
+table#ProjectDetails td:nth-child(even){
+  padding-left: 1em;
+}
+
+
+
+
+
+
+
+/*__________Original Code__________*/
+/*
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid $light-grey;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+*/
