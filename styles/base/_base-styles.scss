@@ -215,7 +215,7 @@ section
   }
 }
 
-#startpage, #project-railrecon, #project-bioside, #project-alone, #project-musclemagic, #project-others
+#startpage, #project-railrecon, #project-bioside, #project-alone, #project-musclemagic, #project-mafia, #project-others
 {
 
   & #backgroundInfos{
@@ -299,7 +299,20 @@ body#project-musclemagic .skewedBox{
   //padding-top:-200px;
 }
 
+/*____________________________________*/
 
+
+#project-mafia>#projectHeader{
+  background-image: url("../assets/portfolio/mafia/mde-large-screenshot1_1920x.png");
+  background-position: top;
+  padding-bottom:80px;
+}
+
+body#project-mafia .skewedBox{
+  margin-top: -24vh;
+  //padding-top: 0px;
+  //padding-top:-200px;
+}
 
 
 /*____________________*/
