@@ -215,7 +215,7 @@ section
   }
 }
 
-#startpage, #project-railrecon, #project-bioside, #project-alone, #project-musclemagic, #project-mafia, #project-others
+#startpage, #project-railrecon, #project-bioside, #project-alone, #project-musclemagic, #project-mafia, #project-others, #project-returnal
 {
 
   & #backgroundInfos{
@@ -309,6 +309,20 @@ body#project-musclemagic .skewedBox{
 }
 
 body#project-mafia .skewedBox{
+  margin-top: -24vh;
+  //padding-top: 0px;
+  //padding-top:-200px;
+}
+
+/*____________________________________*/
+
+#project-returnal>#projectHeader{
+  background-image: url("../assets/portfolio/returnal/screenshots/ret-large-screenshot4_1920x.png");
+  background-position: top;
+  padding-bottom:80px;
+}
+
+body#project-returnal .skewedBox{
   margin-top: -24vh;
   //padding-top: 0px;
   //padding-top:-200px;
