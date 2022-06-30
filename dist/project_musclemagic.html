@@ -136,7 +136,7 @@
         <li>Prototyped and implemented interactive level mechanics while ensuring tool flexibility for the Level Designers.</li>
         <!--<li>Implementation of various game systems with Blueprints (EXAMPLES!).</li> -->
         <li>Working on the overarching systems while keeping the game stable (Game Modes, Round System, Score and Victory screens)</li>
-        <li>Designing and scripting UI elements like the Victory screens and various transitions.</li>
+        <li>Designing and scripting UI elements like the Score & Victory screens and various transitions.</li>
         <li>Maintaining a clean game script for good game performance. Working with Switch hardware constraints</li>
       </ul>
 
@@ -168,41 +168,103 @@
     <div class="six columns">
       <h4>Design Goal</h4>
       <p>
-        To make sure the individual level mechanic works for the game we aim to design level mechanics tying into the game and combat dynamics.
-        They should offer an interesting twist to the standard gameplay and help create memorable moments while being easy to understand by the player.
-        </br></br>
+        Our goal was that level mechanics should offer a twist to the standard gameplay and help create memorable moments while being easy to understand.
       </p>
     </div>
   </div>
   <div class="row">
     <div class="six columns">
-      <h4>Research</h4>
+      <h4>Research & Implementation</h4>
       <p>
-        After coming up with a level mechanic my first goal is to understand the needs of the level and combat designers to define the system before creating it and researching multiple solutions.
-        For example, for one level we wanted cars as moving obstacles, after looking into node and spline-based systems.
-        While a node system was easier to create it offered less fine control when a level designer wants to create curves.
+        After coming up with a mechanic, my first goal is to understand the needs of the level and combat designers to define the system before creating it. It's also important to spend time researching ways to implement the feature and asking programmers for advice depending on the complexity.
       </p>
     </div>
     <div class="six columns">
       <img class="full column" src="assets/portfolio/musclemagic/web/mm-large-screenshot2_1280x.png" alt="City Level">
-      <p>(WIP screenshot) Top left: Character knocked back by on of the moving cars. Middle: Effect Field </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="six columns">
-      <img class="full column" src="assets/portfolio/musclemagic/mm-bp-screenshot01.png" alt="Effect Field Blueprint">
-      <p>Effect Field Blueprint - functionality for changing effects</p>
-    </div>
-    <div class="six columns">
-      <h4>Adapting</h4>
-      <p>
-        One level mechanic that changed was a field applying an effect to the players inside.
-        It had to fit multiple effects and change in between them. A very interesting challenge was to apply a damage buff to spells shot since I had to communicate a change to the spell via the Player inside the Field.
-      </p>
+      <p>Top left: Character knocked back by on of the moving cars. Middle: Effect Field </p>
     </div>
   </div>
 
 </section>
+
+<section id="conclusion" class="container">
+  <h2>Tech Highlights</h2>
+
+  <div class="row">
+    <div class="six columns">
+      <img class="full column" src="assets/portfolio/musclemagic/mm-bp-screenshot01.png" alt="Effect Field Blueprint">
+      <p>Improved Effect Field Blueprint </br></br></p>
+    </div>
+    <div class="six columns">
+      <h4>Effect Field</h4>
+      <p>
+        One level mechanic I worked on was a field applying an effect to the players inside.
+        It had to fit multiple effects and could change between them. A very interesting challenge was to apply a damage buff to spells shot since I had to communicate a change to the spell via the player inside the field.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+      <div class="videoContainer">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/hkKb1VXw_5k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <p>Functionality for changing intervalls</p>
+    </div>
+    <div class="six columns">
+      <div class="videoContainer">
+        <iframe width="100%" height="315"src="https://www.youtube.com/embed/Hb8HX9pY4Wo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      </div>
+      <p> Functionality to increase Damage</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+      <h4>Dynamic Teams</h4>
+      <p>
+        Part of my tasks were implementing teams into the gameplay and ensuring the game kept track of the score. I decided to go for an approach that allows the players to select a team color and ensure that this team's score is being tracked over multiple rounds. 
+      </p>
+    </div>
+      <img class="six columns" src="assets/portfolio/musclemagic/mm-teamdiagram.png" alt="Team Selection diagram">
+      
+  </div>
+
+</section>
+
+
+<section id="conclusion" class="container">
+  <h2>UI/UX Highlights</h2>
+  <div class="row">
+
+    <div class="six columns">
+      <h4>Score Screen</h4>
+      <p>
+        Due to our limited team size, I also got around designing and implementing the UI/UX for our Score and Victory Screens as well as the transition animations between those.
+        The Score UI in particular, had multiple iterations. Initially, we tried to display the visuals in the game world and theme the wins with "dumbells" and the height of the players inspired by games like Move or Die. 
+        However, this wasn't clear to all players so <a href="https://drive.google.com/drive/folders/1XhYTrtJZq6NpvqEJXDDDy9ElQaMKOeva?usp=sharing"><b>I did more reasearch and implemented a simplified 2D UI with 3D characters.</b></a>
+      </p>
+    </div>
+    <div class="six columns">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bfyiOki4D8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p></br></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JD14lwKXjaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="six columns">
+      <h4>Victory Screen</h4>
+      <p>
+        The Victory screen needed to accommodate various team sizes and character customizations. We iterated on this multiple times until we felt it had the right visual impact and end a match with a high beat.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 <section id="conclusion" class="container">
   <div class="row">
     <h2 class="text-caps">Lessons Learned</h2>
