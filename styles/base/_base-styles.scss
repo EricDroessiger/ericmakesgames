@@ -4,6 +4,7 @@
 // html is set to 62.5% so that all the REM measurements throughout Skeleton
 // are based on 10px sizing. So basically 1.5rem = 15px :)
 
+
 html {
   font-size: 52.5%;
 }
@@ -243,6 +244,35 @@ section
   }
 }
 
+#project-purplelamp
+{
+
+  & #backgroundInfos{
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #sectionAbout{
+    //padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #production{
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #conclusion{
+    //padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  & #contact{
+    padding-bottom: 8vw;
+  }
+}
+
+
 /*____________________________________*/
 
 #project-railrecon>#projectHeader{
@@ -327,6 +357,21 @@ body#project-returnal .skewedBox{
   //padding-top: 0px;
   //padding-top:-200px;
 }
+
+/*____________________________________*/
+
+#project-purplelamp>#projectHeader{
+  background-image: url("../assets/portfolio/purplelamp/screenshots/screenshot_placeholder2_pl_1920x.png");
+  background-position: top;
+  padding-bottom: 240px;
+}
+
+body#project-purplelamp .skewedBox{
+  margin-top: -24vh;
+  padding-top: 180px;
+  //padding-top:-200px;
+}
+
 
 
 /*____________________*/
