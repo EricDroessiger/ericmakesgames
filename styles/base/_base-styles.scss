@@ -216,7 +216,7 @@ section
   }
 }
 
-#startpage, #project-railrecon, #project-bioside, #project-alone, #project-musclemagic, #project-mafia, #project-others, #project-returnal
+#startpage, #project-railrecon, #project-bioside, #project-alone, #project-musclemagic, #project-mafia, #project-others, #project-returnal, #project-purplelamp
 {
 
   & #backgroundInfos{
@@ -243,7 +243,7 @@ section
     padding-bottom: 8vw;
   }
 }
-
+/*
 #project-purplelamp
 {
 
@@ -271,7 +271,7 @@ section
     padding-bottom: 8vw;
   }
 }
-
+*/
 
 /*____________________________________*/
 
@@ -361,14 +361,14 @@ body#project-returnal .skewedBox{
 /*____________________________________*/
 
 #project-purplelamp>#projectHeader{
-  background-image: url("../assets/portfolio/purplelamp/screenshots/screenshot_placeholder2_pl_1920x.png");
+  background-image: url("../assets/portfolio/purplelamp/screenshots/SB7.jpg");
   background-position: top;
   padding-bottom: 240px;
 }
 
 body#project-purplelamp .skewedBox{
   margin-top: -24vh;
-  padding-top: 180px;
+  //padding-top: 180px;
   //padding-top:-200px;
 }
 
