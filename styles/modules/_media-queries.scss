@@ -182,5 +182,41 @@
 // Larger than Desktop HD
 @media (#{$bp-larger-than-desktophd}) {}
 
+// Large screens (1440p, 4K)
+// Die Container wachsen ab ca. 1420px nicht mehr (max-width 1136px),
+// vw/vh-Abstände aber schon. Darum hier feste Obergrenzen.
+
+// Projektkarten: Text bleibt über den Icons (6vw bei 1420px = ca. 85px)
+@media (min-width: 1420px)
+{
+	.card-intro
+	{
+	margin-top: 85px;
+	}
+}
+
+// Projektseiten: skewedBox verdeckt den Titel nicht mehr (-24vh bei 1080px = ca. -260px)
+@media (min-height: 1080px)
+{
+	body#project-bioside .skewedBox,
+	body#project-alone .skewedBox,
+	body#project-musclemagic .skewedBox,
+	body#project-mafia .skewedBox,
+	body#project-returnal .skewedBox,
+	body#project-purplelamp .skewedBox
+	{
+	margin-top: -260px;
+	}
+}
+
+// Rail Recon nutzt ab Tablet -14vw (-14vw bei 1920px = ca. -270px)
+@media (min-width: 1920px)
+{
+	body#project-railrecon .skewedBox
+	{
+	margin-top: -270px;
+	}
+}
+
 // Code der sich verändern soll hier einfügen. Vererbung geht von klein nach Groß.
 // Verlinkt zu den variablen.sass
